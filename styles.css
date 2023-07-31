@@ -1,11 +1,29 @@
-html, body {
+html{
     height: 100%;
+
     margin: 0;
+
+    background-color: #f2f2f2;
 }
 
 body {
+    margin: 0 15px;
+
+    background-color: #ffffff;
+
     font-family: "ArialMT", "Arial", sans-serif;
 }
+
+.grayColor {
+    color: #74787a;
+}
+
+.sourceNewsFont {
+    color: #b2b2b2;
+    font-style: italic;
+    font-size: 0.8em;
+}
+
 
 .rootContainer {
     display: grid;
@@ -15,7 +33,7 @@ body {
     'rodape'
     ;
     grid-template-columns: 1fr;
-    grid-template-rows: 167px 1fr 140px;
+    grid-template-rows: 267px 1fr 221px;
 
     height: 100%;
 }
@@ -25,21 +43,21 @@ body {
 }
 
 .headerContainer img {
+    max-height: 267px;
     height: 100%;
     width: 100%;
 }
 
 .contentContainer {
     grid-area: content;
-
-    width: 90%;
-
+    justify-self: center;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    justify-self: center;
+    width: 90%;
 }
 
 .principalNewsContainer {
@@ -47,12 +65,47 @@ body {
     flex-direction: column;
 
     width: 100%;
+
+    margin-bottom: 30px;
+}
+
+.principalNewsContainer img {
+    max-height: 434px;
+    width: 100%;
 }
 
 .newsContainer {
     display: flex;
-
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 35px;
+    
     width: 100%;
+}
+
+.newsItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    max-width: 286px;
+    width: 30%;
+}
+
+.newsItem img {
+    max-height: 216px;
+}
+
+.horizontalStripe {
+    display: block;
+
+    height: 4px;
+    width: 20%;
+
+    mix-blend-mode: overlay;
+    background-image: url('./assets/header.png') ;
+
+    text-decoration: none;
 }
 
 .footerContainer {
@@ -60,7 +113,7 @@ body {
 }
 
 .footerContainer img {
-    height: 81px;
+    height: 162px;
     width: 100%;
 }
 

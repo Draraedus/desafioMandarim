@@ -7,6 +7,9 @@
     <title>Manda_Trends</title>
 
     <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="rootContainer">
@@ -15,38 +18,48 @@
         </header>
         <section class="contentContainer">
             <section class="principalNewsContainer">
-                <img src="./assets/newsPrincipal.png" alt="Notícia Principal">
+                <img class="imgNews" src="./assets/newsPrincipal.png" alt="Notícia Principal">
                 <div class="principalNewsInfo">
                     <h2>NRF 2020: conheça os top 5 assuntos do evento.</h2>
-                    <p>O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações para o setor.</p>
+                    <p class="grayColor">O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações para o setor.</p>
                 </div>
                 <div>
-                    <p>Fonte: CMO ADOBE</p>
+                    <p class="sourceNewsFont ">Fonte: CMO ADOBE</p>
+                    <span class="horizontalStripe"></span>
                 </div>
             </section>
             <section class="newsContainer">
-                <div class="news1">
-                    <img src="./assets/news1.png" alt="Notícia 1">
-                    <div class="principalNewsInfo">
-                        <h2>NRF 2020: conheça os top 5 assuntos do evento.</h2>
+                <div class="newsItem">
+                    <img class="imgNews" src="./assets/news1.png" alt="Notícia 1">
+                    <div class="newsInfo">
+                        <h2>Petição para colocar Kobe Bryant no logo da NBA.</h2>
                     </div>
                     <div>
-                        <p>Fonte: Daily Mail</p>
+                        <p class="sourceNewsFont" >Fonte: Daily Mail</p>
+                        <span class="horizontalStripe"></span>
                     </div>
                 </div>
-                <div class="news2">
-                    <img src="./assets/news2.png" alt="Notícia 2">
-                    <div class="principalNewsInfo">
+                <div class="newsItem">
+                    <img class="imgNews" src="./assets/news2.png" alt="Notícia 2">
+                    <div class="newsInfo">
                         <h2>WhatsApp terá função de pagamentos em 2020.</h2>
                     </div>
                     <div>
-                        <p>Fonte: Proxxima</p>
+                        <p class="sourceNewsFont" >Fonte: Proxxima</p>
+                        <span class="horizontalStripe"></span>
                     </div>
                 </div>
             </section>
         </section>
         <footer class="footerContainer">
-            <img src="./assets/superiorFooter.png" alt="Rodapé Superior">
+            <div class="superiorFooterContainer">
+                <p class="mandarimFont">MAND&#769;ARIM</p>
+                <span></span>
+                <div>
+                    <p>we <strong>design</strong></p>
+                    <p>for <strong>shopper</strong></p>
+                </div>
+            </div>
             <div class="inferiorFooterContainer">
                 <p>Copyright ® Mandarin. Todos os direitos reservados.<br>
                 Caso não deseje mais receber nossos e-mails, por favor <a href="" style="color: black;">clique aqui</a>.</p>
